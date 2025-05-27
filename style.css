@@ -1,77 +1,79 @@
-
-body, html {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  height: 100%;
-  overflow: hidden;
+  background: linear-gradient(145deg, #1c1b3a, #0d0c1f);
+  color: white;
 }
 
-#bg-video {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.3);
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-}
-
-nav {
-  position: fixed;
-  top: 0;
   width: 100%;
-  background: rgba(0,0,0,0.5);
-  padding: 10px 0;
-  text-align: center;
+  top: 0;
+  z-index: 1000;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.logo {
+  font-size: 24px;
   font-weight: bold;
 }
 
-.content {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  margin-top: 20vh;
+.logo span {
+  color: #ff4ecb;
 }
 
-h1 {
-  font-size: 3em;
-  text-shadow: 0 0 20px #ff69f3;
-}
-
-p {
-  font-size: 1.3em;
-  margin: 20px 0;
-}
-
-button {
-  background: #b85cff;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1em;
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
   color: white;
-  border-radius: 10px;
-  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4ecb;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff4ecb;
+}
+
+.intro p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ff4ecb;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
   transition: background 0.3s ease;
 }
 
-button:hover {
-  background: #a348f0;
+.btn:hover {
+  background: #ff1fb1;
 }
