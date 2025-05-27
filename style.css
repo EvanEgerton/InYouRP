@@ -2,35 +2,36 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, rgba(15, 15, 27, 0.85), rgba(28, 28, 46, 0.9)),
-              url('background.jpg') no-repeat center center fixed;
-  background-size: cover;
+              url('background.jpg') no-repeat center center / cover;
   color: white;
   font-family: 'Rubik Mono One', sans-serif;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-.menu {
+/* Верхнее горизонтальное меню */
+.top-menu {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
-  z-index: 1;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.4); /* слегка затемнённая подложка */
-  padding: 40px;
-  border-radius: 20px;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(15, 15, 27, 0.6); /* затемнение фона под меню */
 }
 
-.menu a {
+.top-menu a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   transition: color 0.3s;
 }
 
-.menu a:hover {
+.top-menu a:hover {
   color: #ff0077;
 }
