@@ -8,7 +8,10 @@ body {
   height: 100vh;
 }
 
-/* Шапка */
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,13 +26,11 @@ body {
   z-index: 999;
 }
 
-/* Логотип */
 .logo {
   font-size: 1.3rem;
   color: white;
 }
 
-/* Меню по центру */
 .menu {
   position: absolute;
   left: 50%;
@@ -47,4 +48,27 @@ body {
 
 .menu a:hover {
   color: #ff0077;
+}
+
+.about-section {
+  padding: 100px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  max-width: 900px;
+  margin: 100px auto 0;
+  border-radius: 12px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.about-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
 }
