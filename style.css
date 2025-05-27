@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -8,24 +9,18 @@ body {
   height: 100vh;
 }
 
-/* Верхнее горизонтальное меню */
 .top-menu {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 20px 40px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
-  background: rgba(15, 15, 27, 0.6); /* лёгкое затемнение */
+  gap: 30px;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .top-menu a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: color 0.3s;
 }
 
