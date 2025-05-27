@@ -54,3 +54,29 @@ body {
   text-align: center;
   font-size: 1rem;
 }
+
+
+/* Секция правил */
+.rules-section {
+  padding: 100px 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 100vh;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+}
+.rules-section h2 {
+  font-size: 1.5rem;
+  color: #ff0077;
+  margin-bottom: 20px;
+}
+
+.rules-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+.rules-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

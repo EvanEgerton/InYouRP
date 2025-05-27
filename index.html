@@ -24,5 +24,23 @@
     <h2>О проекте InYou RP</h2>
     <p>InYou RP — это инклюзивный, креативный RP-проект, созданный для того, чтобы каждый мог быть собой. Мы ценим свободу самовыражения, стиль GTA и эстетику неона. Здесь ты строишь не просто персонажа — ты создаешь вторую жизнь.</p>
   </section>
+
+  <section id="rules" class="rules-section">
+    <h2>Правила InYou RP</h2>
+    <p>1. Уважение ко всем участникам сообщества.</p>
+    <p>2. Запрещены любые проявления дискриминации и токсичности.</p>
+    <p>3. Соблюдение ролеплей правил и честная игра.</p>
+    <p>4. Запрещён метагейминг, пауэргейминг, DM и другие нарушения RP.</p>
+  </section>
 </body>
+
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const rules = document.querySelector('.rules-section');
+      if (rules && rules.getBoundingClientRect().top < window.innerHeight) {
+        rules.classList.add('visible');
+      }
+    });
+  </script>
 </html>
