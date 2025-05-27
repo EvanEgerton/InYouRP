@@ -8,14 +8,18 @@ body {
   height: 100vh;
 }
 
-header {
+/* Шапка */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
   background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 10;
 }
 
+/* Логотип */
 .logo {
   font-size: 1.6rem;
   color: white;
@@ -26,6 +30,7 @@ header {
   color: #ff0077;
 }
 
+/* Меню */
 .menu {
   display: flex;
   gap: 25px;
