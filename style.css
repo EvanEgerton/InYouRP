@@ -6,9 +6,6 @@ body {
   color: white;
   font-family: 'Rubik Mono One', sans-serif;
   height: 100vh;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
@@ -51,24 +48,9 @@ html {
 }
 
 .about-section {
-  padding: 100px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  max-width: 900px;
-  margin: 100px auto 0;
-  border-radius: 12px;
-  font-family: 'Rubik Mono One', sans-serif;
-}
-
-.about-section h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  padding: 100px 40px 40px;
+  margin-top: 60px;
+  background-color: rgba(0,0,0,0.4);
   text-align: center;
-}
-
-.about-section p {
   font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: center;
 }
