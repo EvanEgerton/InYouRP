@@ -12,35 +12,29 @@
     <div class="logo">InYou<span style="color:#ff0077;">RP</span></div>
     <nav class="menu">
       <a href="#">НАЧАТЬ ИГРАТЬ</a>
-      
-      
       <a href="https://www.instagram.com/inyou.rp/" target="_blank">INSTAGRAM</a>
       <a href="#about">О ПРОЕКТЕ</a>
-      
+      <a href="#rules">ПРАВИЛА</a>
     </nav>
   </header>
 
-  <section id="about" class="about-section">
-    <h2>О проекте InYou RP</h2>
-    <p>InYou RP — это инклюзивный, креативный RP-проект, созданный для того, чтобы каждый мог быть собой. Мы ценим свободу самовыражения, стиль GTA и эстетику неона. Здесь ты строишь не просто персонажа — ты создаешь вторую жизнь.</p>
-  </section>
+  <main>
+    <section id="about" class="about">
+      <h1>О ПРОЕКТЕ INYOU RP</h1>
+      <p><strong>InYou RP</strong> — это инклюзивный, креативный RP-проект, созданный для того, чтобы каждый мог быть собой.
+        Мы ценим свободу самовыражения, стиль GTA и эстетику неона.
+        Здесь ты строишь не просто персонажа — ты создаёшь вторую жизнь.</p>
+    </section>
 
-  <section id="rules" class="rules-section">
-    <h2>Правила InYou RP</h2>
-    <p>1. Уважение ко всем участникам сообщества.</p>
-    <p>2. Запрещены любые проявления дискриминации и токсичности.</p>
-    <p>3. Соблюдение ролеплей правил и честная игра.</p>
-    <p>4. Запрещён метагейминг, пауэргейминг, DM и другие нарушения RP.</p>
-  </section>
+    <section id="rules" class="rules">
+      <h2>ПРАВИЛА INYOU RP</h2>
+      <ul>
+        <li><strong>1.</strong> Уважение ко всем участникам сообщества.</li>
+        <li><strong>2.</strong> Запрещены любые проявления дискриминации и токсичности.</li>
+        <li><strong>3.</strong> Соблюдение ролеплей правил и честная игра.</li>
+        <li><strong>4.</strong> Запрещён метагейминг, пауэргейминг, DM и другие нарушения RP.</li>
+      </ul>
+    </section>
+  </main>
 </body>
-
-
-  <script>
-    window.addEventListener('scroll', () => {
-      const rules = document.querySelector('.rules-section');
-      if (rules && rules.getBoundingClientRect().top < window.innerHeight) {
-        rules.classList.add('visible');
-      }
-    });
-  </script>
 </html>

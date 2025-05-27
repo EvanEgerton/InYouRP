@@ -1,12 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, rgba(15, 15, 27, 0.85), rgba(28, 28, 46, 0.9)),
-              url('background.jpg') no-repeat center center / cover;
+  background: linear-gradient(to bottom, rgba(15, 15, 27, 0.85), rgba(28, 28, 46, 0.9));
   color: white;
   font-family: 'Rubik Mono One', sans-serif;
-  height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .header {
@@ -47,36 +44,32 @@ body {
   color: #ff0077;
 }
 
-.about-section {
-  padding: 100px 40px 40px;
-  margin-top: 60px;
-  background-color: rgba(0,0,0,0.4);
+main {
+  padding-top: 100px;
+}
+
+.about, .rules {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
   text-align: center;
-  font-size: 1rem;
 }
 
-
-/* Секция правил */
-.rules-section {
-  padding: 100px 40px;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin-top: 100vh;
-  color: white;
-  font-size: 1rem;
-  text-align: left;
-}
-.rules-section h2 {
-  font-size: 1.5rem;
-  color: #ff0077;
-  margin-bottom: 20px;
+.rules h2 {
+  margin-top: 60px;
+  text-align: center;
 }
 
-.rules-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 1s ease;
+.rules ul {
+  list-style: none;
+  padding: 0 20px;
+  font-size: 0.9rem;
 }
-.rules-section.visible {
-  opacity: 1;
-  transform: translateY(0);
+.rules li {
+  margin-bottom: 10px;
 }
