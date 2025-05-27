@@ -1,61 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
-}
-.main-section {
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-}
 .overlay {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.content {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 40px;
 }
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .content h1 {
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 0 0 15px #a855f7;
+  font-size: 3em;
+  color: #ff94e1;
+  text-shadow: 0 0 10px #ff94e1;
 }
-.content span {
-    color: #a855f7;
-}
+
 .content p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #ddd;
+  font-size: 1.2em;
+  margin: 20px 0;
 }
-.content button {
-    margin-top: 2rem;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-    background-color: #a855f7;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff4ec9;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
 }
-.content button:hover {
-    background-color: #9333ea;
+
+.cta:hover {
+  background: #ff2eb5;
 }
