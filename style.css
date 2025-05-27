@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, rgba(15, 15, 27, 0.85), rgba(28, 28, 46, 0.9)),
-              url('background.jpg') no-repeat center center / cover;
+              url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: white;
   font-family: 'Rubik Mono One', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +17,11 @@ body {
   flex-direction: column;
   gap: 20px;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4); /* слегка затемнённая подложка */
+  padding: 40px;
+  border-radius: 20px;
 }
 
 .menu a {
