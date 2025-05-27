@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -76,6 +77,7 @@ main {
   padding: 0 20px;
   font-size: 0.9rem;
 }
+
 .rules li {
   margin-bottom: 10px;
 }

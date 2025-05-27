@@ -1,3 +1,4 @@
+
 const translations = {
   ru: {
     play: "НАЧАТЬ ИГРАТЬ",
