@@ -1,64 +1,79 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  background: url('images/background.png') no-repeat center center fixed;
-  background-size: cover;
+  background: linear-gradient(145deg, #1c1b3a, #0d0c1f);
   color: white;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.65);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  gap: 30px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
+.logo {
+  font-size: 24px;
   font-weight: bold;
 }
 
-.content h1 {
-  font-size: 3em;
-  color: #ff94e1;
-  text-shadow: 0 0 10px #ff94e1;
+.logo span {
+  color: #ff4ecb;
 }
 
-.content p {
-  font-size: 1.2em;
-  margin: 20px 0;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 20px;
-  background: #ff4ec9;
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
   color: white;
-  padding: 12px 30px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4ecb;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #ff4ecb;
+}
+
+.intro p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ff4ecb;
+  color: white;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s ease;
 }
 
-.cta:hover {
-  background: #ff2eb5;
+.btn:hover {
+  background: #ff1fb1;
 }
